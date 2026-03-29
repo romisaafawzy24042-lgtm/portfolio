@@ -1,0 +1,207 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background: #ffffff; */
+    overflow-x: hidden;
+}
+body.btn-mode {
+    background: #121212 !important;
+    color: #fff !important;
+}
+header{
+    /* background-color: #111; */
+    height: 100vh;
+}
+.container-custom {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Navbar Section */
+nav .navbar {
+    padding: 15px 0;
+}
+nav .navbar-brand img{
+    width: 50px;
+    height: 50px;
+}
+
+nav .nav-link {
+    color: #000 ;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.nav-link:hover {
+    background-color: #ffb6c1;
+}
+
+
+/* Dak Mode */
+.btn-mode {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #ffb6c1;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.btn-mode:hover {
+    transform: scale(1.1);
+}
+
+.btn .navbar {
+    background-color: #1e1e1e !important;
+}
+
+.btn .card {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.btn .form-control {
+    background-color: #2c2c2c;
+    color: white;
+    border: 1px solid #555;
+}
+
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+}
+
+.hero h1 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.hero span {
+    color:#ffb6c1;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666363;
+    margin: 20px 0;
+}
+.hero .div-img img{
+    width: 300px;
+    height: 300px;
+}
+
+.btn {
+    border-radius: 30px;
+    padding: 10px 30px; 
+}
+
+.hero h1 {
+    animation: fadeDown 1s ease;
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#about{
+    height: 100vh;
+    background-color: #ffb6c1;
+}
+.about{
+    padding-top: 50px;
+}
+.about h1{
+    font-weight:500;
+}
+
+
+/* Projects Section */
+#projects{
+    height: 100vh;
+}
+.card-body p{
+    color: #666363;
+}
+.card-body .btn{
+    background-color: #ffb6c1;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+
+
+/* Contact Section */
+/* #contact{
+    height: 90vh;
+} */
+form input,
+form textarea {
+    border-radius: 20px;
+    padding: 12px;
+}
+#contact form {
+    border-radius: 30px;
+}
+#contact .btn{
+    background-color: #ffb6c1;
+}
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.text-danger {
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+/* Footer Section */
+footer{
+    background-color: rgb(26, 26, 32);
+}
+footer ul li{
+    list-style-type: none;
+}
+footer ul li a{
+    color: #666363;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer ul li a:hover{
+    color: #ffb6c1;
+}
+
+#scrollBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffb6c1;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    display: none;
+    cursor: pointer;
+    z-index: 999;
+}
