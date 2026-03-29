@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio | Romisaa</title>
+    <link rel="icon" href="images/logo.png">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- File CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Home Section -->
+    <!-- Navbar Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="logo"> Romisaa
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="icons">
+                    <a href="#"><i class="fa-brands facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands facebook-f"></i></a>
+                </div> -->
+            </div>
+            <!-- Dark Mode -->
+            <button id="darkModeToggle" class="btn-mode"><i class="fa-solid fa-moon"></i></button>
+        </nav>
+
+
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="container-custom d-flex justify-content-between gap-5">
+                <div class="div-text">
+                    <h1>About </h1>
+                    <p>Front-End Developer Student
+                        I design and build modern, <br>
+                        responsive websites that make an impact.<br>
+                        Clean code, creative ideas, and smooth user experience.
+                    </p>
+                    <a href="projects.html" class="btn" style="background-color: #ffb6c1">View Projects</a>
+                </div>
+                <div class="div-img">
+                    <img src="images/prog-img.png" class="rounded-circle" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About me Section -->
+    <section class="text-center" id="about" style="margin-top:100px;">
+        <div class="container">
+            <div class="about">
+                <h1>About Me</h1>
+                <p style="max-width:600px;margin:auto; color: rgb(53, 52, 52);">
+                    I am Romisaa, a student at WE School.
+                    I am passionate about Web Development and learning new technologies.
+                </p>
+                <h3 class="mt-4">My Skills</h3>
+                <div class="row">
+                    <div class="d-flex justify-content-center gap-3 mt-2 mb-3">
+                        <span class="badge bg-dark" style=" padding: 20px; margin: 10px; font-size: 17px;">HTML</span>
+                        <span class="badge bg-dark" style=" padding: 20px; margin: 10px; font-size: 17px;">CSS</span>
+                        <span class="badge bg-dark"
+                            style=" padding: 20px; margin: 10px; font-size: 17px;">JavaScript</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="images/skills.png" class="m-auto" style="width: 400px; height: 200px;" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class=" mt-5" id="contact" style="padding: 50px;">
+        <h1 class="text-center mb-5">Contact Me</h1>
+        <div class="row">
+            <div class="col">
+                <div class="">
+                    <div class="d-flex mb-1">
+                        <i class="fas fa-envelope mr-2"></i>
+                        <span class="">Email</span>
+                    </div>
+                    <p class="ml-6">pro1@gmail.com</p>
+                    <p class="ml-6">pro2@gmail.com</p>
+                </div>
+                <div class="mb-6">
+                    <div class=" mb-1">
+                        <i class="fas fa-phone-alt mr-2"></i>
+                        <span class="">Phone</span>
+                    </div>
+                    <p class="ml-6">(+01) 1234 5678 00</p>
+                    <p class="ml-6">(+01) 1234 5678 90</p>
+                </div>
+                <div class="mb-6">
+                    <div class="mb-1">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span class="">Address</span>
+                    </div>
+                    <p class=" ml-6"><span class="">New York Office</span><br>331
+                        Maple Street, Monroe Avenue, CA 90017</p>
+                    <p class="mt-2"><span class="">Anguilla
+                            Office</span><br>2118 Bird Spring, Creek Road, TX 77388</p>
+                </div>
+            </div>
+            <div class="col">
+                <form id="contactForm" class=" mt-4"
+                    style="max-width:600px;margin:auto;padding: 50px; background-color: rgb(26, 26, 32);">
+                    <input type="text" id="name" style="height: 50px;" class="form-control mb-2" placeholder="Your Name"
+                        required>
+                    <small id="nameError" class="text-danger"></small>
+                    <input type="email" id="email" style="height: 50px;" class="form-control mb-2"
+                        placeholder="Your Email" required>
+                    <small id="emailError" class="text-danger"></small>
+                    <input type="tel" id="phone" style="height: 50px;" class="form-control mb-2"
+                        placeholder="Your Phone" required>
+                    <textarea id="message" style="height: 100px;" class="form-control mb-4" placeholder="Message"
+                        required></textarea>
+                    <small id="messageError" class="text-danger"></small>
+                    <button type="submit" class="btn  w-100">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer Section -->
+    <footer class="">
+        <div class="row p-5">
+            <div class="col text-center">
+                <h3 class="text-light"><i class="fas fa-window-restore mr-2"></i>Portfolio</h3>
+                <p class="mb-1" style="color: #a6a2a2;">portfolio@gmail.com</p>
+                <p class="mb-3" style="color: #aca9a9;">+2012-345-6789</p>
+                <h4 class="text-light">Follow Us</h4>
+                <div class="">
+                    <a href="#" class=""><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class=""><i class="fab fa-instagram"></i></a>
+                    <a href="#" class=""><i class="fab fa-twitter"></i></a>
+                    <a href="#" class=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="col text-center">
+                <h5 class="text-light">About Us</h5>
+                <ul class="">
+                    <li><a href="#" class="">Support Center</a></li>
+                    <li><a href="#" class="">Customer Support</a></li>
+                    <li><a href="about.html" class="">About Us</a></li>
+                    <li><a href="#" class="">Copyright</a></li>
+                </ul>
+            </div>
+            <div class="col text-center">
+                <h5 class="text-light mb-3">Our Information</h5>
+                <ul class="">
+                    <li><a href="#" class="">Return Policy</a></li>
+                    <li><a href="#" class="">Privacy Policy</a></li>
+                    <li><a href="#" class="">Terms & Conditions</a></li>
+                    <li><a href="#" class="">Site Map</a></li>
+                </ul>
+            </div>
+            <div class="col text-center">
+                <h5 class="text-light mb-3">My Account</h5>
+                <ul class="">
+                    <li><a href="#" class="">Press Inquiries</a></li>
+                    <li><a href="#" class="">Images & B-roll</a></li>
+                    <li><a href="#" class="">Permissions</a></li>
+                    <li><a href="#" class="">Speaker Requests</a></li>
+                </ul>
+            </div>
+            <div class="col text-center">
+                <h5 class="text-light mb-3">Policy</h5>
+                <ul class="">
+                    <li><a href="#" class="">Application Security</a></li>
+                    <li><a href="#" class="">Software Principles</a></li>
+                    <li><a href="#" class="">Software Policy</a></li>
+                    <li><a href="#" class="">Responsible Supply</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollBtn">↑</button>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
